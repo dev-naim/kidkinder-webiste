@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.dropdown-menu {
+  top: 98%;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover> a {
+  color: #16df7e;
+}
+.link-section {
+  background: #17a2b8;
+  padding: 100px 0;
+  text-align: center;
+}
+.link-section h1 {
+  font-size: 70px;
+  color: #fff;
+}
+.link-section ol li a:hover {
+  text-decoration: underline;
+}
+body{
+  color: #666666;
+  background-color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #00394f;
+}
+
+.section-para h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+.section-para{
+  position: relative;
+}
+.section-para p {
+  font-size: 17px;
+  color: #17a2b8;
+  font-weight: normal;
+  /* position: relative; */
+}
+.section-para p::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 161px;
+  width: 50px;
+  height: 2px;
+  background: #17a2b8;
+}
+
+.section-btn {
+  display: inline-block;
+  padding: 8px 24px;
+  background: #17a2b8;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 30px;
+  transition: all 0.3s linear;
+}
+.section-btn:hover{
+  background: #0f6674;
+  color: #fff;
+}
+
+.section-title p{
+  font-size: 17px;
+  color: #17a2b8;
+  font-weight: normal;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #17a2b8;
+}
+
+.section-title span {
+  position: relative;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #17a2b8;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    color: #17a2b8;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    color: #0f6674;
+    
+  }
+  
+/* ================================
+ Preloader 
+================================
+*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+    background: #fafafa;
+  }
+  #preloader::before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 5px solid #17a2b8;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width:  50px;
+    height: 50px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #17a2b8;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #17a2b8;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  /* ======== Main CSS Start ========= */
+  .header-section {
+    background: #F8F9FA;
+  }
+
+  .header-section .navbar-brand {
+    font-weight: bold;
+    
+  }
+  .navbar {
+    --bs-navbar-padding-y: 0;
+  }
+  .navbar {
+   
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-section .navbar-brand {
+    display: inline-block;
+    font-size: 50px;
+}
+  .header-section .navbar-brand span{
+    color: #17a2b8 ;
+    
+  }
+  .flaticon-043-teddy-bear:before {
+    content: "\f12a";
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+}
+[class^=flaticon-]:before, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+.header-section .navbar-nav .nav-link {
+    padding: 30px 15px;
+    color: #00394f;
+    font-weight: bold;
+}
+.header-section .navbar a:hover, .navbar .navbar-nav .nav-link.active, .navbar .active:focus, .navbar li:hover> a {
+    color: #17a2b8;
+}
+.header-btn a {
+    background: #17a2b8;
+    color: #ffffff !important;
+    padding: .377rem .75rem;
+    font-size: 1rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all ease-in-out 0.15s;
+}
+.header-btn a:hover {
+    background: #117a8a;
+}
+
+/* ======= Banner Section Start ====== */
+.banner-section {
+  padding-top: 45px;
+  padding-bottom: 0;
+  background: #17A2B8;
+}
+.padding-lft {
+  padding-left: 27px;
+}
+.banner-section span {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+.banner-section h1 {
+  font-size: 72px;
+  color: #ffffff;
+  padding-top: 25px;
+}
+.banner-section p {
+  color: #ffffff;
+  padding-top: 10px;
+}
+.banner-section a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00394f;
+  padding: 18px 51px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.padding-lft a:hover {
+  background: #001f2b;
+  
+}
+/* ======= Banner Section End ====== */
+
+/* ===== fecilites Section Start ===== */
+.fecilites-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+.fecilites-item {
+  background: #F8F9FA;
+  padding: 30px 30px 10px 30px;
+  border-radius: 10px;
+  border-top: 1px solid rgba(23, 162, 184,0.2);
+}
+
+.fecilites-icon i {
+  display: inline-block;
+  color: #17a2b8;
+  font-size: 42px;
+  
+}
+.fecilites-content span {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Handlee", cursive;
+  color: #00394f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* ===== fecilites Section End ===== */
+
+/* ====== About Section Start Here ===== */
+.about-us-section .row .col-lg-7{
+  margin-top: 60px;
+}
+.about-img img{
+  width: 450px;
+  
+}
+.about-p {
+  font-size: 17px;
+  margin-bottom: 26px;
+}
+
+.about-right-right ul li{
+  display: block;
+  margin-top: 7px;
+  border-bottom: 1px solid #dee2e6 ;
+  padding-bottom: 7px;
+  padding-left: 15px;
+}
+.about-right-right ul li:first-child{
+  border-top: 1px solid #dee2e6 ;
+  padding-top: 7px;
+}
+
+/* ====== About Section End Here ===== */
+
+/* ====== kid Class Section start ====== */
+.kid-class-section {
+  padding: 90px 0;
+}
+
+/* ====== kid Class Section End ====== */
+
+/* ===== registration-section start here== */
+.registration-section .section-para p::after{
+  left: 122px;
+}
+.registration-form .card-header {
+  background: #00394f ;
+}
+.registration-form .card-body {
+  background: #17A2B8;
+}
+.registration-form .form-control {
+  padding: 0.700rem .75rem;
+ 
+}
+.registration-form .card-body {
+  padding: 47px;
+}
+.registration-form select {
+  height: 50px;
+  color: #666;
+}
+.registration-form button.btn {
+  padding: .975rem .75rem;
+  background: #00394f;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.registration-form button.btn:hover{
+  background: #001d29;
+}
+.registration-form .card {
+  border-radius: 30px;
+}
+/* ===== registration-section end here== */
+
+/* ===== Team Section Start Here ========= */
+.team-section .section-title p::before {
+  left: 423px;
+}
+.team-section .section-title p::after {
+  left: 636px;
+}
+
+.team-items {
+  
+  width: 255px;
+  height: 255px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 50%;
+}
+.team-items img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+
+}
+.team-items .team-social {
+  background: rgba(23, 162, 184,0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.team-hov:hover .team-items .team-social{
+  visibility: visible;
+  opacity: 1;
+}
+.team-items .icon {
+  margin-top: 107px;
+  margin-left: 64px;
+}
+.team-items .icon a {
+  width: 38px;
+  margin-right: 5px;
+  
+}
+
+.team-items .icon a:hover i{
+  color: #17a2b8;
+  
+}
+/* ===== Team Section End Here ========= */
+
+/* ====== Tesimonial Section start here  */
+.testmonial-section .section-title p::before {
+  left: 449px;
+}
+.testmonial-section .section-title p::after {
+  left: 611px;
+}
+.testmonial-section .swiper-pagination {
+  margin-top: 36px;
+  position: relative;
+}
+.testmonial-section .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #17a2b8;
+}
+.testmonial-section .swiper-pagination .swiper-pagination-bullet-active {
+  background: #17a2b8;
+}
+.testmonial-section .content-box {
+  position: relative;
+}
+
+/* ====== Tesimonial Section end here  */
+
+/* ===== Footer Section Start here======= */
+.footer-section {
+  background: #00394F;
+}
+.footer-top,.footer-bottom{
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.footer-top .row{
+  border-bottom: 1px solid rgb(17, 122, 138,0.5);
+  
+}
+.rowpt {
+  padding-top: 90px;
+}
+.logos {
+  color: #17a2b8;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover i{
+  color:  #0f6674;
+}
+.footer-content h4 {
+  height: 48px;
+}
+.footer-link ul li a{
+  transition: all 0.2s ease-in-out;
+}
+.footer-link ul li:hover a{
+  text-decoration: underline;
+}
+
+.footer-form form input,.footer-form button {
+  width: 100%;
+  height: 51px;
+}
+/* ===== Footer Section end here======= */
+
+
+/* link er Gallery Section Start here */
+.gallery-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #17a2b8;
+  
+}
+.gallery-box {
+  width: 349px;
+  position: relative;
+}
+.gallery-box img{
+  width: 100%;
+  height: auto;
+}
+.gallery-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(23, 162, 184,0.8);
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.gallery-icon i {
+  display: inline-block;
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
+.gallery-icon i:hover {
+  color: blue;
+}
+.gallery-box:hover .gallery-link{
+  opacity: 1;
+  visibility: visible;
+}
+/* link er Gallery Section end here */
+
+
+/* === link er Contact Section Start Here */
+.office-address > h4{
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  background: #117a8a;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+.office-address > h4.last-addres{
+ margin-bottom: 30px;
+}
+/* === link er Contact Section End Here */
+
+/* ==== link er Blog Details Section start ==== */
+
+.blog-heading >p{
+  color: #17a2b8;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.blog-heading >p::after {
+  content: "";
+  position: absolute;
+  left: 166px;
+  top: 11px;
+  width: 78%;
+  height: 2px;
+  background: #17a2b8;
+}
+.blog-details-section .wrap-img{
+  width: 350px;
+ 
+}
+.user-dtls h6{
+  margin-bottom: 0;
+}
+.blog-comment img{
+  width: 50px;
+  margin-bottom: 110px;
+}
+.blog-form-box{
+  background: #F8F9FA;
+  padding: 50px;
+}
+/* left side */
+.user-details {
+  background: #17a2b8;
+  padding: 50px 20px;
+}
+.input-group-text {
+  padding: .975rem .75rem;
+
+}
+.blog-img{
+  width: 100px;
+}
+.recent-post {
+  background: #F8F9FA;
+  border-radius: 7px;
+}
+.recent-post img{
+  height: 100%;
+  border-radius: 7px 0 0 7px;
+}
+.recent-post h5{
+  font-size: 19px;
+}
+.recent-post .col-8 {
+  flex: 0 0 auto;
+  padding-right: 0;
+  width: 66.666667%;
+}
+.recent-post .admin-txt{
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/* ==== link er Blog Details Section end ==== */

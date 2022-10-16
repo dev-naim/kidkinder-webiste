@@ -1,0 +1,125 @@
+/* Maximum 1080 down and Minimum 992 Uper */
+@media only screen and (max-width: 1080px) and (min-width: 992px) {
+    .header-section .navbar-nav .nav-link {
+        padding: 30px 11px;
+        color: #00394f;
+        font-weight: bold;
+    }
+    .header-btn {
+        margin-left: 10px;
+    }
+    /* team section */
+    
+    /* testimonial section */
+    
+}
+
+
+/* Maximum width 992px down */
+@media only screen and (max-width: 992px) {
+    .header-section .navbar-nav .nav-link {
+        padding: 16px 15px;
+    }
+    .header-btn {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    /* banner section */
+    .banner-section .padding-lft {
+        text-align: center;
+    }
+    .banner-section h1 {
+        font-size: 65px;
+    }
+    .banner-section .banner-img {
+        margin-top: 50px;
+        text-align: center;
+    }
+    /* about section */
+    .about-us-section .row .col-lg-7{
+        margin-top: 50px;
+    }
+    /* kid-class-section */
+    .kid-class-section .row .col-lg-4 {
+        margin-top: 30px;
+    }
+    /* registration-section  */
+    .registration-section .row .col-lg-5 {
+        margin-top: 40px;
+    }
+    /* team section */
+    .team-items {
+        margin: 0 auto;
+    }
+    .team-section .row .col-lg-3 {
+        margin-top: 30px;
+    }
+    /* blog section */
+    .blog-section .row .col-lg-4 {
+        margin-top: 30px;
+    }
+    /* link section */
+    .link-section h1{
+        font-size: 60px;
+    }
+    /* link er Contact Section */
+    .contact-section .row .col-lg-5{
+        margin-top: 30px;
+    }
+    .blog-mt {
+        margin-top: 30px;
+    }
+}
+
+/* Maximum width 768px down */
+@media only screen and (max-width: 768px) {
+    .header-section .navbar-nav .nav-link {
+        padding: 13px 15px;
+        text-align: center;
+    }
+    .header-btn {
+        text-align: center;
+    }
+    /* banner */
+    .banner-section h1 {
+        font-size: 56px;
+    }
+    /* team section */
+   
+    /* footer section */
+  .mt-ft-sm {
+    margin-top: 30px;
+  }
+  /* link section */
+  .link-section h1{
+    font-size: 50px;
+}
+}
+
+
+
+
+/* Maximum width 576px down */
+@media only screen and (max-width: 576px) {
+    .header-section .navbar-brand {
+        font-size: 40px;
+        margin-right: 0;
+    }
+    /* banner */
+    .banner-section h1 {
+        font-size: 41px;
+    }
+    /* fecilites section */
+    .up-mt-4{
+        margin-top: 20px;
+    }
+    .about-right-col {
+        width: 50%;
+    }
+    /* link section */
+    .link-section h1{
+        font-size: 40px;
+    }
+
+    
+}
